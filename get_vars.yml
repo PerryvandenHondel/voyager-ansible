@@ -1,0 +1,10 @@
+---
+- name: Playbook get_vars
+  hosts: test
+  become: true
+    
+  tasks:
+  - name: Show variables
+    debug:
+      msg: Host name {{ ansible_hostname }} IP={{ inventory_hostname }} Distribution={{ inventory_hostname }} version={{ ansible_distribution_version }}
+
