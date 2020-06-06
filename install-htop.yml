@@ -1,0 +1,11 @@
+---
+- name: Playbook htop
+  hosts: test
+  become: true
+  
+  tasks:
+  - name: Install the latest version of htop
+    package:
+      name: htop
+      state: latest
+
