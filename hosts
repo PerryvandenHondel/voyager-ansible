@@ -1,3 +1,14 @@
 [test]
 192.168.178.252     # CentOS 8; Pihole
 192.168.178.33      # Ubuntu; Splunk 8
+
+
+[ubuntu]
+192.168.178.33          # Ubuntu + Splunk
+192.168.178.157         # Ubuntu + Plex
+
+[centos]
+#192.168.178.251         # CentOS + Zeek
+192.168.178.252         # CentOS + Pi-Hole
+
+
