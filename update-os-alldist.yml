@@ -1,0 +1,15 @@
+---
+# File: update-all-linux.yml
+# Run as: anibsle-playbook update-os-alldist.yml
+#
+- hosts: alllinux
+  become: yes
+
+  tasks:
+    - name: Update apt repo and cache on all Debian/Ubuntu boxes
+      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+      when: ansible_distribution == 'Ubuntu'
+
+    - name: Upgrade all packages on servers
+      apt: upgrade=dist force_apt_get=yes
+      when: ansible_distribution == 'Ubuntu'

@@ -13,3 +13,8 @@
 192.168.178.252                         # CentOS + Pi-Hole
 
 
+[alllinux]
+192.168.178.33                          # Ubuntu + Splunk
+192.168.178.157                         # Ubuntu + Plex
+192.168.178.251                         # CentOS + Zeek
+192.168.178.252                         # CentOS + Pi-Hole
